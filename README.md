@@ -55,7 +55,7 @@ Denver
 Diana DeGette
 ```
 
-![image](analysis/election_resslts.png)
+![image](analysis/election_results.png)
 
 ## Election Audit Summary
 This script can be modified in order to accomodate elections where the type of vote is recorded in the dataset. In this situation, "vote_type" could have three different values: mail-in ballots, in-person punchcards, and direct recording electronic (DRE) counting. Collecting this information could be beneficial in understanding voter trends per county or state, such as if a type of voting method favors a particular candidate. If "voter_type" was part of the "election_results.csv" it would be necessary to modify the script by first creating a vote method list containing all three options, and then a voter method dictionary to hold a count of the number of times each voting method is used. Then it is necessary to loop through the data and add conditionals to find the number of times each voting method is used. 
