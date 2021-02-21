@@ -58,7 +58,6 @@ Diana DeGette
 ![image](analysis/election_resslts.png)
 
 ## Election Audit Summary
-This script can be modified in order to accomodate the a 
- - electoral college in a presidential election
-  * calculate electoral votes after receiving # of popular votes
- -  
+This script can be modified in order to accomodate elections where the type of vote is recorded in the dataset. In this situation, "vote_type" could have three different values: mail-in ballots, in-person punchcards, and direct recording electronic (DRE) counting. Collecting this information could be beneficial in understanding voter trends per county or state, such as if a type of voting method favors a particular candidate. If "voter_type" was part of the "election_results.csv" it would be necessary to modify the script by first creating a vote method list containing all three options, and then a voter method dictionary to hold a count of the number of times each voting method is used. Then it is necessary to loop through the data and add conditionals to find the number of times each voting method is used. 
+
+If the "election_results.csv`" was based on a presidential election, the script would collect votes from counties and then convert the votes for winner of the popular vote to electoral votes. Since the Election Audit dataset was taken from a congressional election in Colorado, we can work with 9 electoral votes. After declaring a winner from the popular vote in Colorada, a conditional can be added the the if statement that declares the winner. Once the winner is declared, 9 electoral votes can be distrubuted to the candidate. 
